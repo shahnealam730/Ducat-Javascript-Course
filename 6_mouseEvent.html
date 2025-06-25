@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: #04aa6d; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Mouse Events is Working !</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("mouseover", function () {
+        console.log("Mouse Over is activated");
+      });
+
+      btn.addEventListener("mouseout", function () {
+        console.log("Mouse out is activated");
+      });
+
+      btn.addEventListener("mousedown", function () {
+        btn.innerText = "Mouse button is held down";
+        btn.style.backgroundColor = "blue";
+      });
+      btn.addEventListener("mouseup", function () {
+        btn.innerText = "You released the mouse button";
+        btn.style.backgroundColor = "skyblue";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <button id="btn">light</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+      let body = document.getElementById("body");
+
+      btn.addEventListener("click", function () {
+        if (btn.innerText == "light") {
+          body.style.backgroundColor = "black";
+          btn.style.backgroundColor = "white";
+        } else {
+          body.style.backgroundColor = "white";
+          btn.style.backgroundColor = "black";
+        }
+        btn.innerText = btn.innerText == "light" ? "dark" : "light";
+        btn.style.color = btn.innerText == "light" ? "white" : "black";
+      });
+    </script>
+  </body>
+</html>

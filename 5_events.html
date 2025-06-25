@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: #04aa6d; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="handleClick()">Click on Me !</button>
+
+    <button id="btn">Double Click on Me !</button>
+
+    <button id="rightClick">Right Click On Me !</button>
+
+    <script>
+      function handleClick() {
+        alert("Button was clicked !");
+      }
+
+      let btn = document.getElementById("btn");
+      btn.addEventListener("dblclick", function () {
+        alert("You double clicked on button..");
+      });
+
+      let rightClick = document.getElementById("rightClick");
+      rightClick.addEventListener("contextmenu", rightClickFunc);
+      function rightClickFunc() {
+        alert("You right Cliked on me");
+      }
+    </script>
+  </body>
+</html>
+<!-- 
+how to check events?
+DOM event list - https://www.w3schools.com/jsref/dom_obj_event.asp
+
+external/internal: 
+target element
+addEventListener("click",callBaclFunction)
+
+inline: onclick, ondblclick, onfocus, onsubmit
+
+
+-->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- children[1] -->
+    <!-- Parent -->
+    <ul id="list">
+      <!-- firstElementChild -->
+      <li>HTML</li>
+      <!-- nextElementSibling -->
+      <li>CSS</li>
+      <!--  -->
+      <li>JS</li>
+      <!--  -->
+      <li>React</li>
+      <!-- previousElementSibling -->
+      <li>Angular</li>
+      <!-- lastElementChild -->
+    </ul>
+    <!-- add Java in first position -->
+
+    <script>
+      let list = document.getElementById("list");
+      let li = document.createElement("li");
+      li.textContent = "Java";
+      console.log(li);
+      //   let position = list.firstElementChild;
+      //   let position = list.lastElementChild.previousElementSibling;
+      let position =
+        list.firstElementChild.nextElementSibling.nextElementSibling;
+      console.log(position);
+      list.insertBefore(li, position);
+    </script>
+  </body>
+</html>
+<!-- 
+insertBefore(elm, targetPosition)
+-->

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>We are Creating and Inserting Elements & Content using DOM</h1>
+    <div id="container">
+      <h2>Welcome to my Page</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ex
+        necessitatibus quidem doloremque repellendus nemo dolorum obcaecati
+        facere nobis, voluptas ratione accusantium asperiores veritatis quasi
+        provident! At iure, repudiandae expedita voluptatem consectetur
+        blanditiis quisquam consequatur enim labore dignissimos possimus animi
+        deleniti! Aut harum asperiores libero, corporis porro soluta sit enim.
+      </p>
+      <!-- <h2>Thanyou for visiting oue webpage</h2> -->
+    </div>
+    <hr />
+    <ul id="list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>BS</li>
+      <!-- <li>REACT</li> -->
+    </ul>
+    <hr />
+
+    <table id="myTable" border="3">
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+      </tr>
+      <tr>
+        <td>Jack</td>
+        <td>Sr Dev</td>
+      </tr>
+      <!-- <tr>
+        <td>Emily</td>
+        <td>HR</td>
+      </tr> -->
+    </table>
+    <script>
+      let elm = document.getElementById("container");
+      let heading = document.createElement("h2");
+      //   console.log(heading);
+      heading.textContent = "Thanyou for visiting our webpage";
+      console.log(heading);
+      elm.appendChild(heading);
+
+      let list = document.getElementById("list");
+      let li = document.createElement("li");
+      li.textContent = "REACT";
+      console.log(li);
+      list.appendChild(li);
+
+      let myTable = document.getElementById("myTable");
+      let row = document.createElement("tr");
+      let data1 = document.createElement("td");
+      data1.textContent = "Emily";
+      console.log(data1);
+      row.appendChild(data1);
+
+      let data2 = document.createElement("td");
+      data2.textContent = "HR";
+      console.log(data2);
+      row.appendChild(data2);
+
+      myTable.appendChild(row);
+    </script>
+  </body>
+</html>
+
+<!-- 
+for creating element - document.createElement("h2")
+to add some content - textContent
+add that content in container - appendChild() - insert in last index
+
+-->

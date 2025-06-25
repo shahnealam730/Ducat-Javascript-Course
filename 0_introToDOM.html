@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button {
+        background-color: #04aa6d;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .image {
+        height: 250px;
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Heading 1 Tag</h1>
+    <h1>Introduction to DOM in Javascript</h1>
+    <h2 id="heading">This is a simple Heading 2 Tag</h2>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, vero!
+    </p>
+    <p class="para">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
+      corrupti. Saepe, beatae!
+    </p>
+    <p class="para1">This is a simple Paragraph type contnet</p>
+    <img
+      src="https://images.unsplash.com/photo-1749627995669-4d4dda3a9c1d?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+      class="image"
+    />
+    <br />
+    <button id="btn">Click Me</button>
+    <button id="btn1">Click Me</button>
+
+    <script>
+      // id selector:
+      let heading = document.getElementById("heading"); // target h2
+      console.log(heading); // check in console
+      // update text: innerText
+      heading.innerText = "Changed heading content using DOM...";
+
+      // class selector:
+      let para = document.getElementsByClassName("para");
+      console.log(para);
+      // para[0].innerText = "This is the new Content of paragraph 1";
+      // para[1].innerText = "This is the new Content of paragraph 2";
+
+      for (let i = 0; i < para.length; i++) {
+        para[i].innerText = "This is the new Content of paragraph";
+      }
+
+      let para1 = document.getElementsByClassName("para1");
+      console.log(para1);
+      // update text/element: innerHTML
+      para1[0].innerHTML =
+        "<li>We are updaing Text & Element in this para...</li>";
+
+      // querySelector:
+
+      let image = document.querySelector(".image");
+      console.log(image);
+      image.src =
+        "https://images.unsplash.com/photo-1749324440929-6a9b5cb008b7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+      let btn = document.querySelector("#btn");
+      console.log(btn);
+      btn.innerText = "CLICK HERE";
+
+      // element selector
+      let heading1 = document.getElementsByTagName("h1");
+      console.log(heading1);
+    </script>
+  </body>
+</html>
+
+<!-- 
+DOM: Document Object Model
+When webpage is loaded browser creates a Document Model of the Tree 
+We can create,update,delete,chnage styles using DOM 
+DOM Manipulation
+
+1. target element
+2. store that element in js variable
+3. Manipulation
+
+Selectors:
+id selector: document.getElementById("id-value");
+class selector: document.getElementsByClassName("class"); - return array
+element selector: document.getElementsByTagName("h1"); - return array
+querySelector: document.querySelector(".class/#id");
+querySelectorAll: document.querySelectorAll(".class"); 
+-->

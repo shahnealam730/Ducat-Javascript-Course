@@ -43,7 +43,6 @@
 // // // //     }
 // // // // }
 
-
 // // // // // 5. Check whether a number is even or odd
 // // // // let number = 7;
 
@@ -53,8 +52,6 @@
 // // // //     console.log("Odd number");
 // // // // }
 
-
-
 // // // // let length = 5;
 // // // // let breadth = 10;
 
@@ -63,7 +60,6 @@
 // // // // } else {
 // // // //   console.log("Rectangle");
 // // // // }
-
 
 // // // // let num1 = 10;
 // // // // let num2 = 20;
@@ -89,12 +85,9 @@
 // // // //     }
 // // // // }
 
-
-
-
-// // // // Write a JavaScript conditional statement to sort three numbers. Display an alert box to 
-// // // // show the results.    
-// // // // Sample numbers : 0, -1, 4    
+// // // // Write a JavaScript conditional statement to sort three numbers. Display an alert box to
+// // // // show the results.
+// // // // Sample numbers : 0, -1, 4
 // // // // Output : 4, 0, -1
 
 // // // // let a = 0, b = -1, c = 4;
@@ -119,7 +112,6 @@
 // // // //     }
 // // // // }
 
-
 // // // // let a = 3;
 // // // // let b = -7;
 // // // // let c = 2;
@@ -132,8 +124,6 @@
 // // // //     console.log("The sign is 0");
 // // // // }
 
-
-
 // // // // let year = 2025;
 
 // // // // if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
@@ -141,7 +131,6 @@
 // // // // } else {
 // // // //     console.log(year + " is not a leap year");
 // // // // }
-
 
 // // // // 90 and above : A
 // // // // 75 to 89 : B
@@ -163,7 +152,6 @@
 // // // //     console.log("Invalid");
 // // // // }
 
-
 // // // // let char = 'A';
 
 // // // // if (
@@ -183,19 +171,15 @@
 // // // //     console.log(char + " is not a vowel");
 // // // // }
 
-
-
 // // // // let num = 4;
 // // // //  let res = num % 2 === 0 ? "Even" : "Odd"
 // // // //  console.log(res);
-
-
 
 // // // // let days = "8"
 // // // // switch (days) {
 // // // //     case "1":
 // // // //         console.log('Sunday');
-        
+
 // // // //         break;
 // // // //         case "2":
 // // // //         console.log('Monday');
@@ -215,13 +199,12 @@
 // // // //     case "7":
 // // // //         console.log('Saturday');
 // // // //         break;
-        
+
 // // // //     default:
 // // // //         case "8":
 // // // //         console.log('Invalid day');
 // // // //         break;
 // // // // }
-
 
 // // // let num1 = 5;
 // // // let num2 = 10;
@@ -250,10 +233,6 @@
 // // //     default:
 // // //         console.log("Invalid operator");
 // // // }
-
-
-
-
 
 // // // LOOPS: a block of code will execute until certain condition met.
 // // // why we need loop?
@@ -322,7 +301,6 @@
 // // // }
 // // // console.log("The sum of even numbers: " + sum);
 
-
 // // let guess = prompt("Guess a number..?")
 // // let secretNumber = 10;
 // // // print you guessed it right
@@ -332,7 +310,6 @@
 // //     guess = prompt("Try again!")
 // // }
 // // alert("Correct !")
-
 
 // // LOOPS: a block of code will execute until certain condition met.
 // // why we need loop?
@@ -401,7 +378,6 @@
 // // }
 // // console.log("The sum of even numbers: " + sum);
 
-
 // // let guess = prompt("Guess a number..?")
 // // let secretNumber = 10;
 // // // print you guessed it right
@@ -411,7 +387,6 @@
 // //     guess = prompt("Try again!")
 // // }
 // // alert("Correct !")
-
 
 // let num = 1;
 // let num2 = 10;
@@ -440,23 +415,15 @@
 //     }
 // }
 
-
-
 // let factorial = 1;
 // for (let i = 1; i <= 7; i++) {
 //     factorial *= i;
 // }
 // console.log("Factorial of 7 is:", factorial);
 
-
-
 // let books = ["C++", "Data_Structure", "Java", "Javascript", ["Basic_JS", "Adv_JS"]];
 // books[4].splice(0, 1)
 // console.log(books)
-
-
-
-
 
 // const  arr1 = [ 1, 2, 3, 4, 5]
 
@@ -467,7 +434,12 @@
 // }
 // console.log(arr2)
 
+// let arr2 = [5, 20, 4, 17, 19, 30, 24, 80, 35, 44];
+// // [20,4,30,24,80,44]
+// console.log(object);
 
-let arr2 = [5, 20, 4, 17, 19, 30, 24, 80, 35, 44]
-// [20,4,30,24,80,44]
+
+
+
+
 
